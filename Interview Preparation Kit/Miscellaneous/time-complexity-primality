@@ -1,0 +1,8 @@
+
+
+// https://www.hackerrank.com/challenges/ctci-big-o/
+
+
+func primality(n: Int) -> String {
+    return (n == 2 || n > 1 && !(2...Int(sqrt(Double(n)))).contains { n % $0 == 0 }) ? "Prime" : "Not prime"
+}
